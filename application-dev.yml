@@ -4,7 +4,7 @@ server:
     min-spare-threads: 50 # Minimum amount of worker threads
 spring:
   datasource:
-    url: jdbc:mysql://techhero-server:3306/cloud?useUnicode=true&characterEncoding=UTF8&useSSL=false&autoReconnect=true
+    url: jdbc:mysql://techhero-mysql:3306/cloud?useUnicode=true&characterEncoding=UTF8&useSSL=false&autoReconnect=true
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
@@ -17,7 +17,7 @@ spring:
     hikari:
       minimum-idle: 0
   redis:
-    host: techhero-server
+    host: techhero-redis
     port: 6379
     password: 
     timeout: 10000
@@ -28,7 +28,7 @@ spring:
         max-active: 30
         max-wait: 10000
   rabbitmq:
-    host: techhero-server
+    host: techhero-rabbitmq
     port: 5672
     username: guest
     password: guest
