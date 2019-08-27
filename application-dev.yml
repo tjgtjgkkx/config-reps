@@ -3,6 +3,10 @@ server:
     max-threads: 500 # Maximum amount of worker threads.
     min-spare-threads: 50 # Minimum amount of worker threads
 spring:
+  cloud:
+    config:
+      override-none: true
+      override-system-properties: false
   datasource:
     url: jdbc:oracle:thin:@47.105.130.127:1521:orcl
     driver-class-name: oracle.jdbc.driver.OracleDriver
