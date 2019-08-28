@@ -8,7 +8,7 @@ spring:
       override-none: true
       override-system-properties: false
   datasource:
-    url: jdbc:oracle:thin:@47.105.130.127:1521:orcl
+    url: jdbc:oracle:thin:@117.50.64.95:1521:orcl
     driver-class-name: oracle.jdbc.driver.OracleDriver
     username: cloud
     password: root
