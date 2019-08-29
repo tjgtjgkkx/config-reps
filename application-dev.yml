@@ -4,7 +4,7 @@ server:
     min-spare-threads: 50 # Minimum amount of worker threads
 spring:
   datasource:
-    url: jdbc:oracle:thin:@117.50.64.95:1521:orcl
+    url: jdbc:oracle:thin:@47.104.88.42:1521:orcl
     driver-class-name: oracle.jdbc.driver.OracleDriver
     username: cloud
     password: root
