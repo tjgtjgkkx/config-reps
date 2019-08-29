@@ -17,8 +17,8 @@ spring:
     lettuce:
       pool:
         max-idle: 30
-        min-idle: 10
-        max-active: 30
+        min-idle: 1
+        max-active: 5
         max-wait: 10000
   rabbitmq:
     host: techhero-rabbitmq
